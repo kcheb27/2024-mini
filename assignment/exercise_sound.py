@@ -17,7 +17,7 @@ speaker = machine.PWM(machine.Pin(SPEAKER_PIN))
 
 def playtone(frequency: float, duration: float) -> None:
     speaker.duty_u16(1000)
-    speaker.freq(frequency)
+    speaker.freq(int(frequency))
     utime.sleep(duration)
 
 
@@ -26,14 +26,15 @@ def quiet():
 
 
 freq: float = 30
-duration: float = 0.1  # seconds
+duration: float = .5  # seconds
 
 print("Playing frequency (Hz):")
-
-for i in range(64):
-    print(freq)
-    playtone(freq, duration)
-    freq = int(freq * 1.1)
+song: float = [659.25,659.25,659.25,523.25,659.25,783.99,523.25,783.99,659.25,880,987.77,932.33,880,783.99,659.25,783.99,880,698.46,783.99,659.25,523.25,587.33,987.77]
+for i in song:
+    print(i)
+    playtone(i, duration)
+    quiet()
+    utime.sleep(.1)
 
 # Turn off the PWM
 quiet()
