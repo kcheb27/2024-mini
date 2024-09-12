@@ -57,7 +57,13 @@ def scorer(t: list[int | None]) -> None:
     # add key, value to this dict to store the minimum, maximum, average response time
     # and score (non-misses / total flashes) i.e. the score a floating point number
     # is in range [0..1]
-    data = {}
+    avg = sum(t_good) / len(t_good)
+    maximum = max(t_good)
+    minimum = min(t_good)
+    data = {"minimum": minimum,
+            "maximum":maximum,
+            "avg":avg,
+            "score": (len(t) - misses) / len(t)}
 
     # %% make dynamic filename and write JSON
 
@@ -67,6 +73,7 @@ def scorer(t: list[int | None]) -> None:
     filename = f"score-{now_str}.json"
 
     print("write", filename)
+    print(data)
 
     write_json(filename, data)
 
@@ -74,7 +81,7 @@ def scorer(t: list[int | None]) -> None:
 if __name__ == "__main__":
     # using "if __name__" allows us to reuse functions in other script files
 
-    led = Pin("LED", Pin.OUT)
+    led = Pin(6, Pin.OUT)
     button = Pin(16, Pin.IN, Pin.PULL_UP)
 
     t: list[int | None] = []
