@@ -6,11 +6,21 @@ from machine import Pin
 import time
 import random
 import json
+#henry changes
+import requests
 
 
 N: int = 3
 sample_ms = 10.0
 on_ms = 500
+
+#henry changes
+
+dataBaseURL = "https://raspberry-pi-pico-miniproject-default-rtdb.firebaseio.com/response_times.json"
+
+def upload_to_firebase(data: dict)
+    jsonData = json.dump(data)
+    response = requests.post(dataBaseURL, data = jsonData)
 
 
 def random_time_interval(tmin: float, tmax: float) -> float:
@@ -64,7 +74,8 @@ def scorer(t: list[int | None]) -> None:
             "maximum":maximum,
             "avg":avg,
             "score": (len(t) - misses) / len(t)}
-
+    # henry changes
+    upload_to_firebase(data)
     # %% make dynamic filename and write JSON
 
     now: tuple[int] = time.localtime()
