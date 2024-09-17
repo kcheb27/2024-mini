@@ -1,4 +1,8 @@
 Exercise 1: The max bright value we found was 30000 and the min value we found was 15000
 Exercise 2:
-Exercise 3:
+[Watch this video](https://youtube.com/shorts/smRVugRtz5Y?si=tWq4C7iFbRVYKlKY)
+Exercise 3: Here is an image of the code's output in Thonny
 ![Alt text](https://github.com/kcheb27/2024-mini/blob/main/PictureOfDBCode.png)
+Additionally here is a picture of the code running as intended. (Note) the led on the Raspberry Pi wasnt working so we changed the GPIO pin and inserted our own LED.
+heres a video of the game running: 
+[Watch this video](https://youtube.com/shorts/pfEmxIS5aKE?si=3Nqhn3Z7IR_voLT-)
