@@ -2,7 +2,7 @@
 <p>The max bright value we found was 30000 and the min value we found was 15000</p> <br>
 
 <h1>Exercise 2:</h1>
-[Watch this video](https://youtube.com/shorts/smRVugRtz5Y?si=tWq4C7iFbRVYKlKY) <br>
+<a href="https://youtube.com/shorts/smRVugRtz5Y?si=tWq4C7iFbRVYKlKY">Watch this video</a> <br>
 
 <h1>Exercise 3:</h1>
 <p>Here is an image of the code's output in Thonny </p>
