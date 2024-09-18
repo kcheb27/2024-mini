@@ -1,8 +1,8 @@
 <h1>Exercise 1:</h1>
-<p>The max bright value we found was 30000 and the min value we found was 15000 based on the conditions we tested in. These values are based on the lighting situation in the Mugar Library </p> <br>
+<p>The max bright value we found was 30000 and the min value we found was 15000 based on the conditions we tested in. These values are based on the lighting situation in the Mugar Library. </p> <br>
 
 <h1>Exercise 2:</h1>
-<p> We attempted to play the Super Mario Bros theme song on the Raspberry Pi by looking up the piano scales of the song and converting those into the correct frequencies. The link to the video is provided below </p>
+<p> We attempted to play the Super Mario Bros theme song on the Raspberry Pi by looking up the piano scales of the song and converting those into the correct frequencies. The link to the video is provided below: </p>
 <a href="https://youtube.com/shorts/smRVugRtz5Y?si=tWq4C7iFbRVYKlKY">Watch this video</a> <br>
 
 <h1>Exercise 3:</h1>
